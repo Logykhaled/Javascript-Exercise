@@ -1,55 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title> Digital Clock</title>
-  <link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css";>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div id="clock" class="light">
-			<div class="display">
-				<div class="weekdays"></div>
-				<div class="ampm"></div>
-				<div id="alarmIcon" class="alarm"></div>
-				<div id="time" class="digits"></div>
-			</div>
-		</div>
+    <div id="app">
+    <h1>to do list</h1>
+    <ul>
+    </ul>
+    <input id="taskIn" type="text" placeholder="New task">
+    <button class='btn_add' id="add_btn" onclick="add()">Add</button>
+    <p>Insert a new task</p>
+    <ul id="task_list">
 
-		<div class="button-holder">
-			<a class="button"  href="#popup1">Alarm</a>
-		</div>
+    </ul>
 
-		<div id="popup1" class="overlay">
-			<div class="popup">
-				<h2>Set Alarm After</h2>
-				<a class="close" href="#">&times;</a>
-				<div class="content-container">
-				<div id="hours" style="width:100%"  >
-					
-					<input type="datetime-local" id="input-time">
-				</div>
-				<!-- <div id="minutes">
-					<h4>Minutes</h4>
-					<input type="text" id="input-mint" placeholder="00">
-				</div>
-				<div  id="seconds" placeholder="00">
-					<h4>Seconds</h4>
-					<input type="text" id="input-sec" placeholder="00">
-				</div>
-				</div> -->
-				<div class="button-container">
-					<a id="set">Set</a>
-					<a id="clear" style="margin-left:20px;">Clear</a>
-				</div>
-
-			</div>
-<!-- JavaScript Includes -->
-	
-<!-- partial -->
-<script  src="./script.js"></script>
-
+    </div>
+<script src="app.js"></script>
 </body>
 </html>
